@@ -28,8 +28,6 @@ jobs:
           
           # 2. run uplift
           uplift bump
-          cat Chart.yml
-          git commit -m "chore: bump version [skip-ci]"
           uplift tag
           
           # 4. Push the tag up to the GitHub remote repository
