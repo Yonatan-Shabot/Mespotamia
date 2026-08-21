@@ -21,13 +21,13 @@ jobs:
 
       - name: Create and Push Tag
         run: |
-          pwd
           # 1. Configure a temporary Git identity
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           # 2. run uplift
           uplift bump
+          cat Chart.yml
           git commit -m "chore: bump version [skip-ci]"
           uplift tag
           
