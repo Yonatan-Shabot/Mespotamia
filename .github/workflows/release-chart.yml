@@ -30,6 +30,9 @@ jobs:
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
 
+      - name: Build dependencies
+        run: |
+          helm dependency build
       - name: Package Helm chart
         run: |
           # Packages the chart into a .tgz file and outputs it to a temporary directory
