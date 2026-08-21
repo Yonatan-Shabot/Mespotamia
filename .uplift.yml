@@ -1,0 +1,6 @@
+bumps:
+  - file: Chart.yaml
+    regex: 
+      - pattern: "Version: $VERSION"
+        semver: true
+        count: 1
