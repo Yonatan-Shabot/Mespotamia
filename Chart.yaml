@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: 0.1.0
 
 name: mesopotamia
 description: A modular-generic collection of templates to deploy any application
