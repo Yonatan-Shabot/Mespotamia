@@ -1,0 +1,16 @@
+{{- define "mesopotamia" }}
+{{- include "mesopotamia.generic.deployment" . }}
+{{- include "mesopotamiamia.generic.files" . }}
+{{- include "mesopotamia.generic.expose" . }}
+{{- include "mesopotamia.generic.networkPolicy" . }}
+{{- include "mesopotamia.generic.sa" . }}
+{{- include "mesopotamia.generic.service" . }}
+{{- include "mesopotamia.global.env" . }}
+{{- include "mesopotamia.global.files" . }}
+{{- include "mesopotamia.global.pull-secret" . }}
+{{- include "mesopotamia.global.pvc" . }}
+{{- include "mesopotamia.global.rbac" . }}
+{{- include "mesopotamia.jobs.files" . }}
+{{- include "mesopotamia.jobs.job" . }}
+{{- include "mesopotamia.jobs.sa" . }}
+{{- end }}

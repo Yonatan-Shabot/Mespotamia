@@ -1,0 +1,21 @@
+apiVersion: v2
+
+name: mesopotamia
+description: A modular-generic collection of templates to deploy any application
+
+type: library
+version: 0.1.5
+
+dependencies:
+  - name: gondwana
+    version: 0.1.6
+    repository: "oci://ghcr.io/yonatan-shabot"
+
+kubeVersion: ">=1.24.0"
+
+sources:
+  - https://github.com/Yonatan-Shabot/Mesopotamia.git
+
+maintainers:
+  - name: Yonatan Shabot
+    email: shabotyonatan@gmail.com
