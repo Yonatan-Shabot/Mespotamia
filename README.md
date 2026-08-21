@@ -77,8 +77,8 @@ This is deployed best using ArgoCD, but you can also use helm install/upgrade or
 
 ### Built With
 
-Helm - The package manager for Kubernetes
-Gondwana - The library chart providing the skeletons to create the templates from (learn more [here](https://github.com/yonatan-shabot/gondwana.git))
+Helm - The package manager for Kubernetes.
+Gondwana - The library chart providing the skeletons to create the templates from (learn more [here](https://github.com/yonatan-shabot/gondwana.git)).
 
 ### Contributing
 
